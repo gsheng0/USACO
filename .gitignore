@@ -3,8 +3,7 @@
 *.lock
 
 # Gradle
-.gradle/
-!gradle-wrapper.ja
+!gradle-wrapper.jar
 build/
 
 # intelliJ
