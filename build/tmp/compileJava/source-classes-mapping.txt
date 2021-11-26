@@ -63,3 +63,13 @@ MilkPails.java
 MixingMilk.java
  MixingMilk
  MixingMilk$InputReader
+Billboard2.java
+ Billboard2
+ Billboard2$InputReader
+ Billboard2$Point
+ Billboard2$Rectangle
+Whitesheet.java
+ Whitesheet
+ Whitesheet$InputReader
+ Whitesheet$Point
+ Whitesheet$Rectangle
