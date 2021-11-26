@@ -1,0 +1,28 @@
+# common
+*.log
+*.lock
+
+# Gradle
+!gradle-wrapper.jar
+build/
+
+# intelliJ
+*.iml
+*.ipr
+*.iws
+.idea/
+out/
+
+# Compiled class file
+*.class
+*.classpath
+
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
