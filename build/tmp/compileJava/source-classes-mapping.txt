@@ -36,9 +36,20 @@ FieldReduction.java
  FieldReduction
  FieldReduction$Cow
  FieldReduction$InputReader
+SquarePasture.java
+ SquarePasture
+ SquarePasture$InputReader
+ SquarePasture$Point
+ SquarePasture$Rectangle
 CowGymnastics.java
  CowGymnastics
  CowGymnastics$InputReader
+PromotionCounting.java
+ PromotionCounting
+ PromotionCounting$InputReader
+WordProcessor.java
+ WordProcessor
+ WordProcessor$InputReader
 Photoshoot.java
  Photoshoot
  Photoshoot$InputReader
@@ -59,6 +70,11 @@ LivestockLineup.java
 LostCow.java
  LostCow
  LostCow$InputReader
+BucketBrigade.java
+ BucketBrigade
+ BucketBrigade$Grid
+ BucketBrigade$InputReader
+ BucketBrigade$Point
 Where.java
  Where
  Where$InputReader
@@ -73,14 +89,3 @@ Whitesheet.java
  Whitesheet$InputReader
  Whitesheet$Point
  Whitesheet$Rectangle
-SquarePasture.java
- SquarePasture
- SquarePasture$InputReader
- SquarePasture$Point
- SquarePasture$Rectangle
-PromotionCounting.java
- PromotionCounting
- PromotionCounting$InputReader
-WordProcessor.java
- WordProcessor
- WordProcessor$InputReader
