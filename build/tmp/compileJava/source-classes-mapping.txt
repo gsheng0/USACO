@@ -73,3 +73,11 @@ Whitesheet.java
  Whitesheet$InputReader
  Whitesheet$Point
  Whitesheet$Rectangle
+SquarePasture.java
+ SquarePasture
+ SquarePasture$InputReader
+ SquarePasture$Point
+ SquarePasture$Rectangle
+PromotionCounting.java
+ PromotionCounting
+ PromotionCounting$InputReader
