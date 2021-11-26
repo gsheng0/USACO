@@ -1,3 +1,42 @@
+MaxSubarray.java
+ MaxSubarray
+ MaxSubarray$InputReader
+BreedGroups.java
+ BreedGroups
+ BreedGroups$InputReader
+Chessboard.java
+ Chessboard
+ Chessboard$Board
+ Chessboard$InputReader
+Billboard.java
+ Billboard
+ Billboard$InputReader
+ Billboard$Point
+ Billboard$Rectangle
+CowGymnastics.java
+ CowGymnastics
+ CowGymnastics$InputReader
+Lifeguards.java
+ Lifeguards
+ Lifeguards$InputReader
+ Lifeguards$Lifeguard
+Mowing.java
+ Mowing
+ Mowing$InputReader
+ Mowing$Move
+BucketBrigade.java
+ BucketBrigade
+ BucketBrigade$Grid
+ BucketBrigade$InputReader
+ BucketBrigade$Point
+Where.java
+ Where
+ Where$InputReader
+Whitesheet.java
+ Whitesheet
+ Whitesheet$InputReader
+ Whitesheet$Point
+ Whitesheet$Rectangle
 TrafficLights.java
  TrafficLights
  TrafficLights$InputReader
@@ -9,23 +48,11 @@ RestaurantCustomers.java
  RestaurantCustomers
  RestaurantCustomers$InputReader
  RestaurantCustomers$Person
-MaxSubarray.java
- MaxSubarray
- MaxSubarray$InputReader
 Billboard2.java
  Billboard2
  Billboard2$InputReader
  Billboard2$Point
  Billboard2$Rectangle
-Chessboard.java
- Chessboard
- Chessboard$Board
- Chessboard$InputReader
-Billboard.java
- Billboard
- Billboard$InputReader
- Billboard$Point
- Billboard$Rectangle
 MilkMeasurement.java
  MilkMeasurement
  MilkMeasurement$Cow
@@ -41,9 +68,6 @@ SquarePasture.java
  SquarePasture$InputReader
  SquarePasture$Point
  SquarePasture$Rectangle
-CowGymnastics.java
- CowGymnastics
- CowGymnastics$InputReader
 PromotionCounting.java
  PromotionCounting
  PromotionCounting$InputReader
@@ -54,14 +78,12 @@ Photoshoot.java
  Photoshoot
  Photoshoot$InputReader
  Photoshoot$Permutation
-Lifeguards.java
- Lifeguards
- Lifeguards$InputReader
- Lifeguards$Lifeguard
-Mowing.java
- Mowing
- Mowing$InputReader
- Mowing$Move
+MixingMilk.java
+ MixingMilk
+ MixingMilk$InputReader
+Uddered.java
+ Uddered
+ Uddered$InputReader
 LivestockLineup.java
  LivestockLineup
  LivestockLineup$Cow
@@ -70,22 +92,9 @@ LivestockLineup.java
 LostCow.java
  LostCow
  LostCow$InputReader
-BucketBrigade.java
- BucketBrigade
- BucketBrigade$Grid
- BucketBrigade$InputReader
- BucketBrigade$Point
-Where.java
- Where
- Where$InputReader
 MilkPails.java
  MilkPails
  MilkPails$InputReader
-MixingMilk.java
- MixingMilk
- MixingMilk$InputReader
-Whitesheet.java
- Whitesheet
- Whitesheet$InputReader
- Whitesheet$Point
- Whitesheet$Rectangle
+JustStalling.java
+ JustStalling
+ JustStalling$InputReader
