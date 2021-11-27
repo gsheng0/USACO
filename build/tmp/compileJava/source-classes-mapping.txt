@@ -1,9 +1,9 @@
 MaxSubarray.java
  MaxSubarray
  MaxSubarray$InputReader
-BreedGroups.java
- BreedGroups
- BreedGroups$InputReader
+MilkPails.java
+ MilkPails
+ MilkPails$InputReader
 Chessboard.java
  Chessboard
  Chessboard$Board
@@ -92,9 +92,12 @@ LivestockLineup.java
 LostCow.java
  LostCow
  LostCow$InputReader
-MilkPails.java
- MilkPails
- MilkPails$InputReader
+Template.java
+ Template
+ Template$InputReader
+BreedGroups.java
+ BreedGroups
+ BreedGroups$InputReader
 JustStalling.java
  JustStalling
  JustStalling$InputReader

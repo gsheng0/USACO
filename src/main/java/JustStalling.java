@@ -6,7 +6,7 @@ import java.util.StringTokenizer;
 public class JustStalling {
     public static int[] sorted;
     public static int[] reversed;
-    public static void run(){
+    public static int run(){
         int num = r.nextInt();
         int[] cows = new int[num];
         int[] stalls = new int[num];
@@ -30,12 +30,14 @@ public class JustStalling {
         }
         int size = 0;
         for(int i = 0; i < permutations.size(); i++){
-            print(permutations.get(i));
             if(isValid(permutations.get(i), stalls)){
                 size++;
             }
         }
-        System.out.println(size);
+        return size;
+    }
+    public static int test(){
+        return r.nextInt();
     }
     public static int[] nextPermutation(int[] nums) {
         if(nums.length == 1){
@@ -122,12 +124,6 @@ public class JustStalling {
         return true;
     }
 
-
-
-    private static InputStream createInputStream() throws Exception {
-        Class clazz = JustStalling.class;
-        return clazz.getResourceAsStream("/" + clazz.getSimpleName() + ".in");
-    }
     private static class InputReader {
         BufferedReader reader;
         StringTokenizer tokenizer;
@@ -158,11 +154,35 @@ public class JustStalling {
 
     private static InputReader r = new InputReader(System.in);
     private static PrintWriter pw = new PrintWriter(System.out);
-
-    public static void main(String[] args) throws Exception {
-        // comment out below line when submitting
-        r = new InputReader(createInputStream());
-        run();
+    private static InputStream createInputStream() throws Exception {
+        Class clazz = Template.class;
+        return clazz.getResourceAsStream("/" + clazz.getSimpleName() + ".in");
+    }
+    private static InputStream createInputStream(String name) throws Exception {
+        Class clazz = Template.class;
+        return clazz.getResourceAsStream("/" + name + ".in");
+    }
+    private static InputStream createInputStream(String name, String suffix) throws Exception {
+        Class clazz = Template.class;
+        return clazz.getResourceAsStream("/" + name + "." + suffix);
+    }
+    public static void testCases(int num) throws Exception{
+        for(int i = 1; i <= num; i++) {
+            r = new InputReader(createInputStream("1"));
+            int out = run();
+            r = new InputReader(createInputStream("1", "out"));
+            int answer = test();
+            System.out.println("Test " + i + " " + (answer == out ? "Passed" : "Failed"));
+        }
         pw.close();
+    }
+    public static void testSample() throws Exception {
+        r = new InputReader(createInputStream());
+        int out = run();
+        System.out.println(out);
+        pw.close();
+    }
+    public static void main(String[] args) throws Exception {
+        testCases(12);
     }
 }
