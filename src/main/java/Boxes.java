@@ -1,27 +1,11 @@
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class Uddered {
-    public static final Class clazz = Uddered.class;
+public class Boxes {
+    public static final Class clazz = Boxes.class;
     public static int run(){
-        String a = r.next();
-        String str = r.next();
-        int counter = 0;
-        int location = 27;
-        for(int i = 0; i < str.length(); i++){
-            char c = str.charAt(i);
-            int index = a.indexOf("" + c);
-            if(index <= location){
-                counter++;
-                location = index;
-            }
-            else if(index > location){
-                location = index;
-            }
-        }
-        return counter;
+        return 0;
     }
-
     public static int test(){
         return r.nextInt();
     }
@@ -70,12 +54,8 @@ public class Uddered {
             int out = run();
             r = new InputReader(createInputStream("" + i, "out"));
             int answer = test();
-            boolean passed = answer == out;
-            System.out.println("Test " + i + " " + (passed ? "Passed" : "Failed"));
-            if(!passed){
-                System.out.println("\tExpected : " + answer);
-                System.out.println("\tRecieved: " + out);
-            }        }
+            System.out.println("Test " + i + " " + (answer == out ? "Passed" : "Failed"));
+        }
         pw.close();
     }
     public static void testSample() throws Exception {

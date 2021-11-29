@@ -168,9 +168,9 @@ public class JustStalling {
     }
     public static void testCases(int num) throws Exception{
         for(int i = 1; i <= num; i++) {
-            r = new InputReader(createInputStream("1"));
+            r = new InputReader(createInputStream("2"));
             int out = run();
-            r = new InputReader(createInputStream("1", "out"));
+            r = new InputReader(createInputStream("2", "out"));
             int answer = test();
             System.out.println("Test " + i + " " + (answer == out ? "Passed" : "Failed"));
         }

@@ -104,9 +104,9 @@ public class BreedGroups {
     }
     public static void main(String[] args) throws Exception {
         for(int i = 1; i <= 11; i++) {
-            r = new InputReader(createInputStream("1"));
+            r = new InputReader(createInputStream("" + i));
             int out = run();
-            r = new InputReader(createInputStream("1", "out"));
+            r = new InputReader(createInputStream("" + i, "out"));
             int answer = test();
             System.out.println("Test " + i + " " + (answer == out ? "Passed" : "Failed"));
         }

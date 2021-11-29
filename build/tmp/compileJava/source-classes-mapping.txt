@@ -81,9 +81,9 @@ Photoshoot.java
 MixingMilk.java
  MixingMilk
  MixingMilk$InputReader
-Uddered.java
- Uddered
- Uddered$InputReader
+BreedGroups.java
+ BreedGroups
+ BreedGroups$InputReader
 LivestockLineup.java
  LivestockLineup
  LivestockLineup$Cow
@@ -92,12 +92,24 @@ LivestockLineup.java
 LostCow.java
  LostCow
  LostCow$InputReader
-Template.java
- Template
- Template$InputReader
-BreedGroups.java
- BreedGroups
- BreedGroups$InputReader
+Differences.java
+ Differences
+ Differences$Diff
+ Differences$InputReader
+Boxes.java
+ Boxes
+ Boxes$InputReader
 JustStalling.java
  JustStalling
  JustStalling$InputReader
+Uddered.java
+ Uddered
+ Uddered$InputReader
+templates/Template.java
+ templates.Template
+ templates.Template$InputReader
+templates/Template2.java
+ templates.Template2
+ templates.Template2$InputReader
+templates/IntTemplate.java
+ templates.IntTemplate
