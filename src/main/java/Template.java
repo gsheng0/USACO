@@ -3,14 +3,17 @@ import java.util.StringTokenizer;
 
 public abstract class Template<E> {
     private Class clazz;
+    InputReader r = new InputReader(System.in);
+    PrintWriter pw = new PrintWriter(System.out);
     public void setClazz(Class clazz){
         this.clazz = clazz;
     }
+    public InputReader getInputReader() { return r; }
     public abstract E run();
 
     public abstract E test();
 
-    private static class InputReader {
+    public static class InputReader {
         BufferedReader reader;
         StringTokenizer tokenizer;
 
@@ -43,8 +46,7 @@ public abstract class Template<E> {
         }
     }
 
-    private static InputReader r = new InputReader(System.in);
-    private static PrintWriter pw = new PrintWriter(System.out);
+
 
     private static InputStream createInputStream(Class clazz) throws Exception {
         return clazz.getResourceAsStream("/" + clazz.getSimpleName() + ".in");
@@ -92,7 +94,16 @@ public abstract class Template<E> {
     public void testSample() throws Exception {
         r = new InputReader(createInputStream(clazz));
         E out = run();
-        System.out.println(out);
+        E answer = test();
+        boolean passed = out.equals(answer);
+        if(passed){
+            System.out.println("Sample test passed");
+        }
+        else{
+            System.out.println("Sample test failed");
+            System.out.println("\tExpected " + answer);
+            System.out.println("\tReceived " + out);
+        }
         pw.close();
     }
 }

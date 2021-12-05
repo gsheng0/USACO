@@ -1,9 +1,9 @@
 MaxSubarray.java
  MaxSubarray
  MaxSubarray$InputReader
-MilkPails.java
- MilkPails
- MilkPails$InputReader
+BreedGroups.java
+ BreedGroups
+ BreedGroups$InputReader
 Chessboard.java
  Chessboard
  Chessboard$Board
@@ -24,6 +24,16 @@ Mowing.java
  Mowing
  Mowing$InputReader
  Mowing$Move
+MixingMilk.java
+ MixingMilk
+ MixingMilk$InputReader
+Differences.java
+ Differences
+ Differences$Diff
+ Differences$InputReader
+Template.java
+ Template
+ Template$InputReader
 BucketBrigade.java
  BucketBrigade
  BucketBrigade$Grid
@@ -44,6 +54,8 @@ Triangles.java
  Triangles
  Triangles$InputReader
  Triangles$Point
+Boxes.java
+ Boxes
 RestaurantCustomers.java
  RestaurantCustomers
  RestaurantCustomers$InputReader
@@ -78,12 +90,12 @@ Photoshoot.java
  Photoshoot
  Photoshoot$InputReader
  Photoshoot$Permutation
-MixingMilk.java
- MixingMilk
- MixingMilk$InputReader
-BreedGroups.java
- BreedGroups
- BreedGroups$InputReader
+JustStalling.java
+ JustStalling
+ JustStalling$InputReader
+Uddered.java
+ Uddered
+ Uddered$InputReader
 LivestockLineup.java
  LivestockLineup
  LivestockLineup$Cow
@@ -92,24 +104,10 @@ LivestockLineup.java
 LostCow.java
  LostCow
  LostCow$InputReader
-Differences.java
- Differences
- Differences$Diff
- Differences$InputReader
-Boxes.java
- Boxes
- Boxes$InputReader
-JustStalling.java
- JustStalling
- JustStalling$InputReader
-Uddered.java
- Uddered
- Uddered$InputReader
-templates/Template.java
- templates.Template
- templates.Template$InputReader
-templates/Template2.java
- templates.Template2
- templates.Template2$InputReader
-templates/IntTemplate.java
- templates.IntTemplate
+MilkPails.java
+ MilkPails
+ MilkPails$InputReader
+Mountains.java
+ Mountains
+ Mountains$Mountain
+ Mountains$Point
