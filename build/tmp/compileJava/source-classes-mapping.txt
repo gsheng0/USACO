@@ -24,9 +24,10 @@ Mowing.java
  Mowing
  Mowing$InputReader
  Mowing$Move
-MixingMilk.java
- MixingMilk
- MixingMilk$InputReader
+Mountains.java
+ Mountains
+ Mountains$Mountain
+ Mountains$Point
 Differences.java
  Differences
  Differences$Diff
@@ -75,14 +76,22 @@ FieldReduction.java
  FieldReduction
  FieldReduction$Cow
  FieldReduction$InputReader
+MixingMilk.java
+ MixingMilk
+ MixingMilk$InputReader
 SquarePasture.java
  SquarePasture
  SquarePasture$InputReader
  SquarePasture$Point
  SquarePasture$Rectangle
+HighCard.java
+ HighCard
 PromotionCounting.java
  PromotionCounting
  PromotionCounting$InputReader
+FieldReductionRedux.java
+ FieldReductionRedux
+ FieldReductionRedux$Point
 WordProcessor.java
  WordProcessor
  WordProcessor$InputReader
@@ -107,7 +116,9 @@ LostCow.java
 MilkPails.java
  MilkPails
  MilkPails$InputReader
-Mountains.java
- Mountains
- Mountains$Mountain
- Mountains$Point
+Room.java
+ Room
+ Room$Slot
+Apartments.java
+ Apartments
+ Apartments$Applicant
