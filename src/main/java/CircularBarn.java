@@ -1,14 +1,7 @@
 import java.util.LinkedList;
 
 public class CircularBarn extends Template<Integer>{
-    private class Node<E>
-    {
-        E val;
-        Node<E> next;
-        public Node(E val){
-            this.val = val;
-        }
-    }
+
     public CircularBarn(){super.setClazz(CircularBarn.class);}
     public Integer run(){
         InputReader r = super.getInputReader();
