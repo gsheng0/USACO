@@ -5,11 +5,11 @@ import java.util.StringTokenizer;
 
 public abstract class Template<E> {
     private Class clazz;
+    private String filename;
     InputReader r = new InputReader(System.in);
     PrintWriter pw = new PrintWriter(System.out);
     public void setClass(Class clazz){
-        this.clazz = clazz;
-        System.out.println("CLASS VARIABLE HAS BEEN Set");
+        filename = clazz.getSimpleName();
     }
     public InputReader getInputReader() { return r; }
     public abstract E run();
@@ -50,24 +50,19 @@ public abstract class Template<E> {
     }
 
 
-
-    private static InputStream createInputStream(Class clazz) throws Exception {
-        return clazz.getResourceAsStream("/" + clazz.getSimpleName() + ".in");
+    private static InputStream createInputStream(String name) throws Exception {
+        return Template.class.getResourceAsStream("/" + name + ".in");
     }
 
-    private static InputStream createInputStream(Class clazz, String name) throws Exception {
-        return clazz.getResourceAsStream("/" + name + ".in");
-    }
-
-    private static InputStream createInputStream(Class clazz, String name, String suffix) throws Exception {
-        return clazz.getResourceAsStream("/" + name + "." + suffix);
+    private static InputStream createInputStream(String name, String suffix) throws Exception {
+        return Template.class.getResourceAsStream("/" + name + "." + suffix);
     }
 
     public void testCases(int num) throws Exception {
         for (int i = 1; i <= num; i++) {
-            r = new InputReader(createInputStream(clazz, "" + i));
+            r = new InputReader(createInputStream("" + i));
             E out = run();
-            r = new InputReader(createInputStream(clazz, "" + i, "out"));
+            r = new InputReader(createInputStream("" + i, "out"));
             E answer = test();
             boolean passed = answer.equals(out);
             System.out.println("Test " + i + " " + (passed ? "Passed" : "Failed"));
@@ -80,9 +75,9 @@ public abstract class Template<E> {
     }
     public void testCases(String[] names) throws Exception{
         for(String name : names){
-            r = new InputReader(createInputStream(clazz, name));
+            r = new InputReader(createInputStream(name));
             E out = run();
-            r = new InputReader(createInputStream(clazz, name, "out"));
+            r = new InputReader(createInputStream(name, "out"));
             E answer = test();
             boolean passed = answer.equals(out);
             System.out.println("Test " + name + " " + (passed ? "Passed" : "Failed"));
@@ -95,8 +90,7 @@ public abstract class Template<E> {
     }
 
     public void testSample() throws Exception {
-        System.out.println("Class name: "  + clazz.getSimpleName());
-        r = new InputReader(createInputStream(clazz));
+        r = new InputReader(createInputStream(filename));
         E out = run();
         E answer = test();
         boolean passed = out.equals(answer);

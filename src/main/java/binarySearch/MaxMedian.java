@@ -7,7 +7,6 @@ import java.util.Arrays;
 
 public class MaxMedian extends Template<Integer> {
     public MaxMedian(){
-        System.out.println("SET CLAZZZ VARIABLE");
         super.setClass(HighCard.class);
     }
     public Integer run(){
@@ -20,7 +19,6 @@ public class MaxMedian extends Template<Integer> {
         int max = Integer.MAX_VALUE;
         int maxMedian = 0;
         for(int i = max; i >= 1; i /= 2){
-            System.out.println("i: " + i);
             while(getNumOperations(nums, maxMedian + i) <= operations){
                 maxMedian += i;
             }
