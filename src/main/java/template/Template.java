@@ -4,12 +4,16 @@ import java.io.*;
 import java.util.StringTokenizer;
 
 public abstract class Template<E> {
-    private Class clazz;
     private String filename;
     InputReader r = new InputReader(System.in);
     PrintWriter pw = new PrintWriter(System.out);
-    public void setClass(Class clazz){
+    @Deprecated
+    public void setFilename(Class clazz){
+        //This method exists to ensure that previous uses of the template remain functional
         filename = clazz.getSimpleName();
+    }
+    public void setFilename(String filename){
+        this.filename = filename;
     }
     public InputReader getInputReader() { return r; }
     public abstract E run();

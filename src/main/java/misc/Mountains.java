@@ -4,7 +4,7 @@ import template.Template;
 
 public class Mountains extends Template<Integer> {
     public Mountains(){
-        super.setClass(Mountains.class);
+        super.setFilename(Mountains.class);
     }
     private static class Point{
         int x;

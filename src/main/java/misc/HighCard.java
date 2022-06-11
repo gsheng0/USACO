@@ -7,7 +7,7 @@ import java.util.Collections;
 
 public class HighCard extends Template<Integer> {
     public HighCard(){
-        super.setClass(HighCard.class);
+        super.setFilename(HighCard.class);
     }
     public Integer run(){
         InputReader r = super.getInputReader();

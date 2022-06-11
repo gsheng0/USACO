@@ -4,7 +4,7 @@ import template.Template;
 
 public class CircularBarn extends Template<Integer> {
 
-    public CircularBarn(){super.setClass(CircularBarn.class);}
+    public CircularBarn(){super.setFilename(CircularBarn.class);}
     public Integer run(){
         Template.InputReader r = super.getInputReader();
         int num = r.nextInt();

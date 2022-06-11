@@ -23,7 +23,7 @@ public class FieldReductionRedux extends Template<Integer> {
     }
 
     public FieldReductionRedux(){
-        super.setClass(FieldReductionRedux.class);
+        super.setFilename(FieldReductionRedux.class);
     }
     public Integer run(){
         Template.InputReader r = super.getInputReader();

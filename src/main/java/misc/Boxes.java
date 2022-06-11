@@ -6,7 +6,7 @@ import java.util.TreeSet;
 
 public class Boxes extends Template<Integer> {
     public Boxes(){
-        super.setClass(Boxes.class);
+        super.setFilename(Boxes.class);
     }
     public Integer run(){
         Template.InputReader r = getInputReader();

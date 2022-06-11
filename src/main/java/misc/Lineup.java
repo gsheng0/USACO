@@ -9,7 +9,7 @@ import java.util.HashSet;
 
 public class Lineup extends Template<ArrayList<Character>> {
     public Lineup(){
-        super.setClass(Lineup.class);
+        super.setFilename(Lineup.class);
     }
     public static class CowSet implements Comparable<CowSet>{
         private ArrayList<Character> list;

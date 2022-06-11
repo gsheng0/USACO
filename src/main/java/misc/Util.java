@@ -21,4 +21,12 @@ public class Util {
         System.out.print(title + " ");
         print(arr, sep);
     }
+    public static void print(int[][] arr){
+        for(int[] row : arr){
+            for(int i : row){
+                System.out.print(i + " ");
+            }
+            System.out.println();
+        }
+    }
 }

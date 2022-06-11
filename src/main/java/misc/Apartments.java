@@ -8,7 +8,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class Apartments extends Template<Integer> {
-    public Apartments() { super.setClass(Apartments.class); }
+    public Apartments() { super.setFilename(Apartments.class); }
     public static class Applicant implements Comparable<Applicant>{
         static int maxDiff = 0;
         int area;

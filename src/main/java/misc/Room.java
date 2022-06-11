@@ -5,7 +5,7 @@ import template.Template;
 import java.util.ArrayList;
 
 public class Room extends Template<ArrayList<Integer>> {
-    public Room(){ super.setClass(Room.class);}
+    public Room(){ super.setFilename(Room.class);}
     public class Slot{
         int start, end;
         public Slot(int start, int end){

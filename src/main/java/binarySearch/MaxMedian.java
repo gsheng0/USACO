@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 public class MaxMedian extends Template<Integer> {
     public MaxMedian(){
-        super.setClass(HighCard.class);
+        super.setFilename(HighCard.class);
     }
     public Integer run(){
         int[] arr = new int[]{1, 3, 5};
