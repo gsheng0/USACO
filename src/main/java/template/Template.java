@@ -92,6 +92,22 @@ public abstract class Template<E> {
         }
         pw.close();
     }
+    public void testCases(String[] inputNames, String[] outputNames, String[] inputPrefixes, String[] outputPrefixes) throws Exception {
+        for(int i = 0; i < inputNames.length; i++){
+            int testNumber = i + 1;
+            r = new InputReader(createInputStream(inputNames[i], inputPrefixes[i]));
+            E out = run();
+            r = new InputReader(createInputStream(outputNames[i], outputPrefixes[i]));
+            E answer = test();
+            boolean passed = answer.equals(out);
+            System.out.println("Test " + testNumber + " " + (passed ? "Passed" : "Failed"));
+            if(!passed){
+                System.out.println("\tExpected: " + answer);
+                System.out.println("\tRecieved: " + out);
+            }
+        }
+        pw.close();
+    }
 
     public void testSample() throws Exception {
         r = new InputReader(createInputStream(filename));

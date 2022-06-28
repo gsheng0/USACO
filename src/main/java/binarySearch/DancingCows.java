@@ -53,10 +53,11 @@ public class DancingCows extends Template<Integer> {
 
     }
     public Integer test(){
-        return 4;
+        InputReader r = super.getInputReader();
+        return r.nextInt();
     }
     public static void main(String[] args) throws Exception {
         DancingCows app = new DancingCows();
-        app.testSample();
+        app.testCases(10);
     }
 }
