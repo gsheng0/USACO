@@ -71,7 +71,7 @@ public abstract class Template<E> {
             boolean passed = answer.equals(out);
             System.out.println("Test " + i + " " + (passed ? "Passed" : "Failed"));
             if (!passed) {
-                System.out.println("\tExpected : " + answer);
+                System.out.println("\tExpected: " + answer);
                 System.out.println("\tRecieved: " + out);
             }
         }
