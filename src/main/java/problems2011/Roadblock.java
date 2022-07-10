@@ -77,10 +77,8 @@ public class Roadblock extends Template<Integer> {
         ArrayList<Pair<Node, Integer>> shortestPaths = getShortestPaths(nodes);
         int originalLength = shortestPaths.get(numFields).b;
         ArrayList<Node> path = getShortestPathToNode(shortestPaths, nodes, numFields);
-        System.out.println("Path: " + path.toString());
         int max = originalLength;
         for(int i = 0; i < path.size() - 1; i++){
-            System.out.println("Doubling path length from " + path.get(i) + " to " + path.get(i + 1));
             int originalPathLength = path.get(i).adjacentNodes.get(path.get(i + 1));
             path.get(i).adjacentNodes.replace(path.get(i + 1), originalPathLength * 2);
             path.get(i + 1).adjacentNodes.replace(path.get(i), originalPathLength * 2);
@@ -127,9 +125,6 @@ public class Roadblock extends Template<Integer> {
         queue.add(nodes[1]);
         while(queue.size() > 0){
             Node current = queue.poll();
-            if(visited.contains(current)){
-                continue;
-            }
             for(Node dest : current.getSortedKeySetOfNeighbors()){
                 int distanceFromCurrentToDest = current.adjacentNodes.get(dest);
                 int distanceFromOriginToCurrent = out.get(current.val).b;
@@ -139,9 +134,10 @@ public class Roadblock extends Template<Integer> {
                 if(currentShortestDistance > distanceFromOriginToDest){
                     out.get(dest.val).b = distanceFromOriginToDest;
                     out.get(dest.val).a = current;
+                    queue.add(dest);
                 }
 
-                queue.add(dest);
+
             }
             visited.add(current);
         }
